@@ -1,11 +1,9 @@
-# Import tkinter library
-
 from tkinter import *
 # import keyboard
 
-# Create an instance of tkinter frame
-win = Tk()
-win.geometry("750x450")
+
+window = Tk()
+window.geometry("750x450")
 
 # Good highlight
 high_bg = "#E7FBBE"
@@ -26,9 +24,9 @@ def add_highlighter():
 
 
 # Create a Tex Field
-text = Text(win, exportselection=True)
+text = Text(window, exportselection=True)
 text.insert(INSERT, "Hey there! Howdy?")
 text.pack()
 # Create a Button to highlight text
-Button(win, text="Highlight", command=add_highlighter).pack()
-win.mainloop()
+Button(window, text="Highlight", command=add_highlighter).pack()
+window.mainloop()
